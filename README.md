@@ -1,2 +1,2 @@
 # Config
-My most important configs all in one place.
+My most important config files all in one place.
