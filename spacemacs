@@ -27,7 +27,9 @@ values."
      vimscript
      lua
      javascript
+     csv
      html
+     nginx
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
@@ -40,6 +42,9 @@ values."
      git
      markdown
      org
+     php
+     javascript
+     yaml
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
@@ -51,7 +56,7 @@ values."
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '(typit cmake-mode)
+   dotspacemacs-additional-packages '(typit cmake-mode dockerfile-mode)
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
@@ -269,6 +274,8 @@ you should place your code here."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(php-mode-coding-style (quote psr2))
+ '(phpcbf-standard "PSR2"))
  '(c-basic-offset 2)
  '(js-indent-level 2)
  '(package-selected-packages
