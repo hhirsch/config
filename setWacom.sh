@@ -2,8 +2,8 @@
 while true
 do
   # left handed tablet
-  #xsetwacom --set "Wacom Intuos Pro M Pen stylus" rotate half;
-  #xsetwacom --set "Wacom Intuos Pro M Finger touch" rotate half;
+  xsetwacom --set "Wacom Intuos Pro M Pen stylus" rotate half;
+  xsetwacom --set "Wacom Intuos Pro M Finger touch" rotate half;
   # upper buttons
   xsetwacom --set "Wacom Intuos Pro M Pad pad" Button 12 "key +shift" # resize brush
   xsetwacom --set "Wacom Intuos Pro M Pad pad" Button 11 "key o" # increase opacity
